@@ -1,7 +1,7 @@
 import google.generativeai as palm
 from . import traductor
 
-palm.configure(api_key='api key') //Sustituir por la verdader api key que te ofrece Google developer
+palm.configure(api_key='api key') #Sustituir por la verdader api key que te ofrece Google developer
 
 generate_text_model = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods][0].name
 
